@@ -17,10 +17,16 @@
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link href="{{ route('posts.index') }}" :active="request()->routeIs('posts.index')">
-                        {{ __('Post') }}
+                    <x-nav-link href="{{ route('admin.products') }}" :active="request()->routeIs('admin.products')">
+                        {{ __('Product') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link href="{{ route('admin.transactions') }}" :active="request()->routeIs('admin.transactions')">
+                        {{ __('Transaction') }}
+                    </x-nav-link>
+                </div>
+
 
             </div>
 
