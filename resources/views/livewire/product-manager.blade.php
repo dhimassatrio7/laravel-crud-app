@@ -1,5 +1,5 @@
-<div class="p-6">
-    <button wire:click="create" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add Product</button>
+<div class="p-6 max-w-7xl mx-auto sm:px-6 lg:px-8"">
+    <button wire:click=" create" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add Product</button>
 
     @if (session()->has('message'))
     <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mt-4">
@@ -22,16 +22,16 @@
             <tbody>
                 @foreach($products as $product)
                 <tr class="hover:bg-gray-100">
-                    <td class="py-2 px-4 border">{{ $product->name }}</td>
-                    <td class="py-2 px-4 border">{{ $product->description }}</td>
-                    <td class="py-2 px-4 border">{{ $product->price }}</td>
-                    <td class="py-2 px-4 border">{{ $product->stock }}</td>
-                    <td class="py-2 px-4 border">
+                    <td class="py-2 px-4 border text-center">{{ $product->name }}</td>
+                    <td class="py-2 px-4 border text-center">{{ $product->description }}</td>
+                    <td class="py-2 px-4 border text-center">{{ $product->price }}</td>
+                    <td class="py-2 px-4 border text-center">{{ $product->stock }}</td>
+                    <td class="py-2 px-4 border text-center">
                         @if($product->image)
                         <img src="{{ Storage::url($product->image) }}" alt="Product Image" class="w-12 h-12 object-cover">
                         @endif
                     </td>
-                    <td class="py-2 px-4 border">
+                    <td class="py-2 px-4 border text-center">
                         <button wire:click="edit({{ $product->id }})" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">Edit</button>
                         <button wire:click="delete({{ $product->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete</button>
                     </td>
