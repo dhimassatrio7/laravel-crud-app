@@ -1,9 +1,9 @@
 Screenshot App
 
 
-![alt text](https://github.com/dhimassatrio7/laravel-crud-app/blob/master/Screenshot%202025-01-09%20204327.png?raw=true)
-![alt text](https://github.com/dhimassatrio7/laravel-crud-app/blob/master/Screenshot%202025-01-09%20204354.png?raw=true)
-![alt text](https://github.com/dhimassatrio7/laravel-crud-app/blob/master/Screenshot%202025-01-09%20204411.png?raw=true)
+![alt text](https://github.com/dhimassatrio7/laravel-crud-app/blob/master/ss1.png?raw=true)
+![alt text](https://github.com/dhimassatrio7/laravel-crud-app/blob/master/ss2.png?raw=true)
+![alt text](https://github.com/dhimassatrio7/laravel-crud-app/blob/master/ss3.png?raw=true)
 
 
 
